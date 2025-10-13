@@ -16,3 +16,4 @@ public class Demo{
       System.out.println("The distinct elements in the array are ");
       distinct_vals(my_arr, arr_len);
    }
+}
