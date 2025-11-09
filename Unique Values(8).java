@@ -1,19 +1,14 @@
-import java.io.*;
-public class Demo{
-   static void distinct_vals(int my_arr[], int len){
-      for (int i = 0; i < len; i++){
-         int j;
-         for (j = 0; j < i; j++)
-         if (my_arr[i] == my_arr[j])
-            break;
-         if (i == j)
-         System.out.print( my_arr[i] + " ");
-      }
-   }
-   public static void main (String[] args){
-      int my_arr[] = {55, 67, 99, 11, 54, 55, 88, 99, 1, 13, 45};
-      int arr_len = my_arr.length;
-      System.out.println("The distinct elements in the array are ");
-      distinct_vals(my_arr, arr_len);
-   }
+public class SimpleDataset {
+public static void main(String[] args) {
+String[] names = {"Alice", "Bob", "Charlie", "Diana", "Ethan"};
+String[] cities = {"Mumbai", "Delhi", "Chennai", "Kolkata", "Bangalore"};
+int id = 1001;
+System.out.println("Simulated Unique Dataset:");
+for (int i = 0; i < names.length; i++) {
+int age = 20 + i * 5; // Just to vary age
+System.out.println("ID: " + id + ", Name: " + names[i] + ", Age: " + age + ", City: " +
+cities[i]);
+id++;
+}
+}
 }
